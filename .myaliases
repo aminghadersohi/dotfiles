@@ -1,0 +1,13 @@
+alias ls="ls -GFh"
+alias la="ls -la"
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias mkdir='mkdir -pv'
+alias venv='virtualenv env && . ./env/bin/activate'
+alias vinit='. ./env/bin/activate'
+alias g='git'
+alias docker_rmi="docker images -q | xargs docker rmi -f"
+alias dclogs="docker-compose logs"
+alias react-codemod="jscodeshift -t ~/work/react-codemod/transforms/class.js --mixin-module-name=react-addons-pure-render-mixin --flow=false --pure-component=false --remove-runtime-proptypes=false"
